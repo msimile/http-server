@@ -1,18 +1,14 @@
-const nome = "Marco";
+import express from "express";
+import "express-async-errors";
 
-console.log(`Hello ${nome}`);
+const app = express();
 
-// import express from "express";
-// import "express-async-errors";
+app.get("/", (request, response) => {
+    response.send("Up and running!");
+});
 
-// const app = express();
+const port = 3000;
 
-// app.get("/", (request, response) => {
-//   response.send("Up and running!");
-// });
-
-// const port = 3000;
-
-// app.listen(port, () => {
-//   console.log(`[server]: Server is running at http://localhost:${port}`);
-// });
+app.listen(port, () => {
+    console.log(`[server]: Server is running at http://localhost:${port}`);
+});
