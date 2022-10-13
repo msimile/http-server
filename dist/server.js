@@ -7,7 +7,7 @@ const express_1 = __importDefault(require("express"));
 require("express-async-errors");
 const app = (0, express_1.default)();
 app.get("/", (request, response) => {
-    response.send("Up and running!");
+    response.send("This is the Space Facts API");
 });
 const port = 3000;
 app.listen(port, () => {
