@@ -6,8 +6,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 require("express-async-errors");
 const app = (0, express_1.default)();
-app.get("/planets", (request, response) => {
-    response.json([{ name: "Mercury" }, { name: "Venus" }]);
+app.get("/username", (request, response) => {
+    response.json([{ name: "Marco" }]);
 });
 exports.default = app;
 //# sourceMappingURL=app.js.map
